@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebSurvey</title>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="C:\Users\Indu\Desktop\aaa\aa\images\logo1.png" class="logo" alt="Logo"/>
+                <ul class="main-nav animated slideInRight" id="check-class">
+                    <li><a href="Main.html">Home</a></li>
+                    <li><a href="history.html">SurveyHistory</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="terms.html">TermsAndservices</a></li>
+                    <li><a href="Login.html">Sign Up</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="main_content-header">
+            <h1>Welcome to <span class="colorchange">WebSurvey</span>.<br></h1>
+            <a href="create.html" class="btn btn-full">Create Survey</a>
+            <a href="attempt.jsp" class="btn btn-nav">Attend Survey</a>
+        </div>
+    </header>
+    <script>
+        function slideshow(){
+            var x=document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
